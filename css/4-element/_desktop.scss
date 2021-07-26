@@ -1,0 +1,57 @@
+@use "../1-settings/"as *;
+
+@media (min-width: 1440px) {
+
+  .textual {
+    display: grid;
+    grid-area: 1 / 1 / -1 / 2;
+    // text-align: $ta-left;
+  }
+
+  .container {
+    grid-area: 1 / 1 / -1 / 2;
+    grid-template: 1fr / 50% 50%;
+
+    &-images {
+      border-radius: 0 .5rem .5rem 0;
+      grid-area: 1 / 2 / -1 / -1;
+      border-radius: 0 .5rem 0 .5rem;
+
+      & img {
+        border-radius: 0 .5rem 0 .5rem;
+      }
+    }
+
+    &-texts {
+      // text-align: $ta-left;
+
+      &__title-text {
+        font-size: 2rem;
+        text-align: $ta-left;
+      }
+
+      &__paragraph-text {
+        font-size: $fs;
+        text-align: $ta-left;
+        line-height: calc(1.5rem + 0.2rem);
+      }
+    }
+
+
+    &-stats {
+      display: flex;
+      justify-content: space-around;
+      text-align: $ta-left;
+
+      & h2 {
+        text-align: $ta-left;
+      }
+    }
+  }
+
+  .attribution {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}

@@ -1,0 +1,29 @@
+@use "../1-settings"as *;
+@use "../2-tools"as *;
+
+.textual {
+  background-color: $color-card-background;
+}
+
+.container-texts {
+  padding: 5% 10%;
+  text-align: $ta-center;
+
+  &__title-text {
+    font-family: $ff-inter;
+    font-weight: $fw-700;
+    font-size: 1.5rem;
+  }
+
+  &--marked-text {
+    color: $color-accent;
+  }
+
+  &__paragraph-text {
+    color: color-alpha($color-white, $alpha-main-paragraph);
+    font-family: $ff-inter;
+    font-weight: $fw-400;
+    font-size: .9rem;
+    padding-bottom: 5%;
+  }
+}

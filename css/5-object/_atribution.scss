@@ -1,0 +1,17 @@
+@use "../1-settings"as *;
+@use "texts"as *;
+
+.attribution {
+  display: flex;
+  justify-content: space-around;
+
+  & p {
+    @extend .container-texts__paragraph-text;
+    font-size: .6rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-a;
+  }
+}

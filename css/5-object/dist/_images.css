@@ -1,0 +1,31 @@
+.container-images {
+  position: relative;
+  margin: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.container-images img {
+  inline-size: 100%;
+  block-size: 100%;
+  background-size: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.container-images::before {
+  position: absolute;
+  background-color: rgba(170, 92, 219, 0.5);
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: inherit;
+}
+.container-images::after {
+  position: absolute;
+  background-color: rgba(9, 11, 26, 0.2);
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: inherit;
+}

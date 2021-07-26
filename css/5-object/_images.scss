@@ -1,0 +1,38 @@
+@use "../1-settings"as *;
+@use "../2-tools"as *;
+
+.container-images {
+  position: relative;
+  margin: 0;
+  border-radius: .5rem .5rem 0 0;
+  // background-image: url(https://i.imgur.com/qHgJnYy.jpeg);
+
+  & img {
+    inline-size: 100%;
+    block-size: 100%;
+    background-size: cover;
+    border-radius: .5rem .5rem 0 0;
+  }
+
+  &::before {
+    position: absolute;
+    background-color: color-alpha($color-accent, .5);
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: inherit;
+  }
+
+  &::after {
+    position: absolute;
+    background-color: color-alpha($color-main-background, .2);
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: inherit;
+  }
+}

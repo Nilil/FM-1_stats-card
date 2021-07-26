@@ -1,0 +1,18 @@
+@forward "./desktop";
+@use "../1-settings"as *;
+
+body {
+  background-color: $color-main-background;
+}
+
+// .layout {
+//   display: grid;
+//   background-color: $color-card-background;
+// }
+
+.container {
+  display: grid;
+  grid-template-rows: 50% 1fr;
+  margin: 10%;
+  color: $color-white;
+}

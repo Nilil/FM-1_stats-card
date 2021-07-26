@@ -1,0 +1,23 @@
+.textual {
+  background-color: #1b1938;
+}
+
+.container-texts {
+  padding: 5% 10%;
+  text-align: center;
+}
+.container-texts__title-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.container-texts--marked-text {
+  color: #aa5cdb;
+}
+.container-texts__paragraph-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-bottom: 5%;
+}

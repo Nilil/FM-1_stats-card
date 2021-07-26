@@ -1,0 +1,19 @@
+@use "../1-settings"as *;
+@use "../2-tools"as *;
+
+.container-stats {
+  text-align: $ta-center;
+  text-transform: uppercase;
+
+  & h2 {
+    // @extend .container__title-text;
+    @include title-style;
+    margin: 0;
+  }
+
+  & p {
+    // @extend .container__paragraph-text;
+    @include paragraph-style;
+    margin: 2% 0 5%;
+  }
+}
